@@ -1,0 +1,20 @@
+
+
+::ng-deep .p-paginator .p-paginator-pages .p-paginator-page.p-highlight{
+  background-color: var(--bg-main-color);
+  color: var(--text-white-color);
+}
+.card .edit-btn {
+  display: none;
+}
+
+.card:hover .edit-btn {
+  display: block;
+}
+.rounded-start
+{
+  height: 100%;
+}
+::ng-deep .p-paginator{
+  background: unset !important;
+}

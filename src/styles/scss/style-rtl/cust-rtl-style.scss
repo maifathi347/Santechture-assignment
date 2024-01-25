@@ -1,0 +1,15 @@
+.ms-auto {
+  margin-left: 0 !important;
+  margin-right: auto !important;
+}
+.general-dropdown .dropdown-menu {
+  left: 0 !important;
+  right: inherit !important;
+}
+.dropdown-toggle::after {
+  margin-right: 0.255em !important;
+  margin-left: inherit !important;
+}
+.scaleX-rtl {
+  transform: scaleX(-1) !important;
+}

@@ -1,0 +1,78 @@
+input[type]::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder,
+select::-webkit-input-placeholder,
+select.form-control.has-value {
+  color: var(--text-desc-color) !important;
+  font-size: 1rem;
+}
+
+input[type]:-moz-placeholder,
+textarea:-moz-placeholder,
+select:-moz-placeholder,
+select.form-control.has-value {
+  /* Firefox 18- */
+  color: var(--text-desc-color);
+  font-size: 1rem;
+}
+
+input[type]::-moz-placeholder,
+textarea::-moz-placeholder,
+select::-moz-placeholder,
+select.form-control.has-value {
+  /* Firefox 19+ */
+  color: var(--text-desc-color);
+  font-size: 1rem;
+}
+
+input[type]:-ms-input-placeholder,
+textarea:-ms-input-placeholder,
+select:-ms-input-placeholder,
+select.form-control.has-value {
+  color: var(--text-desc-color);
+  font-size: 1rem;
+}
+
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 1000px var(--bg-input-color) inset !important;
+}
+
+.form-check-input[type="checkbox"]:focus {
+  box-shadow: none;
+}
+
+.form-check-input[type="checkbox"]:focus-visible {
+  box-shadow: none;
+}
+
+.form-check-input:checked {
+  background-color: var(--bg-main-color);
+  border-color: var(--text-main-color);
+}
+
+.form-control,
+.form-control:focus,
+.form-control:focus-visible,
+.form-select,
+.form-select:focus,
+.form-select:focus-visible,
+.ng-select.ng-select-single .ng-select-container,
+.p-inputtext {
+  box-shadow: none !important;
+  outline: none !important;
+  border-color: var(--border-color);
+  height: 3.4rem;
+  border-radius: var(--border-input-radius);
+  padding: 1rem;
+  background-color: var(--bg-input-color);
+}
+.p-dropdown,
+.p-input-icon-right > .p-inputtext {
+  width: 100% !important;
+  background-color: var(--bg-input-color);
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}

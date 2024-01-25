@@ -1,0 +1,11 @@
+.currency-content {
+  &::before {
+    content: "";
+    position: absolute;
+    border: 0.6px solid #f2f2f2;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    z-index: 0;
+  }
+}

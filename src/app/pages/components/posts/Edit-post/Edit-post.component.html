@@ -1,0 +1,14 @@
+
+<form [formGroup]="EditForm" (submit)="submit()">
+  <div class="row">
+    <div class="col-12 mb-3">
+      <input type="text" class="form-control" formControlName="title" placeholder="Enter new title">
+    </div>
+    <div class="col-12 mb-3">
+      <textarea type="text" class="form-control h-auto" rows="5" formControlName="body" placeholder="Enter new body"></textarea>
+    </div>
+    <div class="col-12 d-flex justify-content-end">
+      <button type="submit" class="btn btn-primary">Edit</button>
+    </div>
+  </div>
+</form>

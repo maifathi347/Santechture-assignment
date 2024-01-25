@@ -1,0 +1,19 @@
+::ng-deep .p-dialog .p-dialog-content{
+  background-color: var(--body-color);
+}
+::ng-deep .p-dialog .p-dialog-header{
+  color: var(--text-dark-color);
+  background-color: var(--body-color);
+}
+.form-control{
+  background-color: var(--bg-white-color);
+  color: var(--text-desc-color);
+}
+.btn-primary {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  width: 19vw;
+  padding: 10px;
+  margin: 10px;
+}

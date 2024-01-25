@@ -1,0 +1,21 @@
+.navbar {
+  transition: all 0.5s ease !important;
+  height: 80px;
+  top: 0;
+  z-index: 66;
+  .logo {
+    width: 200px;
+  }
+  .toggle.fa-bars {
+    width: 40px;
+    height: 40px;
+    background-color: var(--bg-main-color);
+    color: var(--text-white-color);
+  }
+  .nav-link {
+    border: 1px solid var(--bg-main-color);
+    color: var(--bg-main-color);
+    border-radius: 6px;
+    padding: 8px 10px;
+  }
+}

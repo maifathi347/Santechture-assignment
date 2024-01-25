@@ -1,0 +1,39 @@
+<ng-container>
+  <div class="container">
+    <div class="post-details global-card mb-3">
+      <div class="mb-4">
+        <img src="assets/images/Posts/blog-1.png" alt="Post-details" class="w-100 rounded-4">
+      </div>
+      <div class="p-4 mb-4">
+        <h2 class="fw-bold text-capitalize text-dark-color mb-3">{{ postDetails?.title }}</h2>
+        <span class="text-desc-color">{{ postDetails?.body }}</span>
+      </div>
+      <hr>
+      <h3 class="d-flex align-items-center justify-content-start mt-5">{{ comments.length }} Comments </h3>
+      <div class="comments mt-5">
+        <ng-container *ngIf="comments.length > 0; else noComments">
+          <div *ngFor="let item of comments" class="d-flex gap-3 border-bottom py-4">
+            <img src="assets/images/user.jpg" class="rounded-2" width="70" height="70" alt="">
+            <div class="comment-content">
+              <div class="d-flex align-items-center justify-content-between">
+                <h2 class="fw-bold text-dark-color fs-5 mb-0">{{ item?.name }}</h2>
+                <!-- <span class="text-desc-color small">9 Oct 2023, 8:00 Pm</span> -->
+              </div>
+              <span class="text-desc-color small">{{ item?.email }}</span>
+              <p class="text-desc-color mt-2">{{ item?.body }}</p>
+            </div>
+          </div>
+        </ng-container>
+        <ng-template #noComments>
+          <div class="global-card p-4 d-flex justify-content-center">
+            <span>No Comments...............</span>
+          </div>
+        </ng-template>
+        <div class="d-flex align-items-center justify-content-end mt-4 mb-2" [routerLink]="['/posts']">
+          <button class="btn btn-secondary btn-lg">Back To Posts</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</ng-container>
+

@@ -1,0 +1,41 @@
+.btn-solid-main {
+  min-width: 7rem;
+  color: var(--text-white-color);
+  background-color: var(--bg-main-color);
+  border-color: var(--text-main-color);
+  border-radius: var(--border-button-radius);
+  padding: 0.65rem 1.25rem;
+  font-size: 1rem;
+  position: relative;
+  transition: all 0.4s ease-in-out;
+  z-index: 1;
+}
+
+.btn-solid-main:hover,
+.btn-solid-main:focus {
+  color: var(--text-white-color) !important;
+  background-color: var(--bg-main-color);
+}
+
+.btn-outline-main {
+  min-width: 7rem;
+  color: var(--text-main-color);
+  background-color: var(--text-white-color);
+  border-color: var(--text-main-color) !important;
+  border-radius: var(--border-button-radius);
+  padding: 0.65rem 1.25rem;
+  font-size: 1rem;
+  position: relative;
+  transition: all 0.4s ease-in-out;
+  z-index: 1;
+}
+
+.btn-check:checked + .btn,
+.btn:first-child:active,
+.btn.active,
+.btn.show {
+  border: 0 !important;
+}
+.btn-outline-main.active {
+  border: 1px solid var(--bg-main-color) !important;
+}

@@ -1,0 +1,25 @@
+/*START  DROPDOWN*/
+.general-dropdown {
+  .dropdown-menu {
+    right: 0 !important;
+    left: inherit !important;
+  }
+}
+
+/*END  DROPDOWN*/
+
+/*START COMPONENTS*/
+.conversions {
+  .converter {
+    padding-top: 2rem !important;
+  }
+  .convert-value {
+    border: 1px solid var(--bg-main-color);
+    border-radius: var(--border-input-radius);
+    padding: 15px !important;
+  }
+}
+/*END COMPONENTS*/
+
+/*IMPORTING RESPONSIVE SCSS FILE*/
+@import "./responsive.scss";
