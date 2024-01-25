@@ -1,9 +1,6 @@
-import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
-import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { AsyncPipe } from "../../node_modules/@angular/common";
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
@@ -29,14 +26,6 @@ import { DatePipe } from "@angular/common";
     ReactiveFormsModule,
     OnlineStatusModule,
     SharedModule,
-    MatSnackBarModule,
-    TranslateModule.forRoot({
-      loader: {
-        provide: TranslateLoader,
-        useFactory: HttpLoaderFactory,
-        deps: [HttpClient],
-      },
-    }),
   ],
   providers: [
     DatePipe,
@@ -47,6 +36,4 @@ import { DatePipe } from "@angular/common";
 
 })
 export class AppModule { }
-export function HttpLoaderFactory(http: HttpClient): TranslateHttpLoader {
-  return new TranslateHttpLoader(http, './assets/i18n/', '.json');
-}
+

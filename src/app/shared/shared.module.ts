@@ -2,7 +2,6 @@ import { SkeletonComponent } from './components/skeleton/skeleton.component';
 import { HeaderComponent } from './components/header/header.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { PrimeNgModule } from './modules/prime-ng/prime-ng.module';
-import { TranslateModule } from '@ngx-translate/core';
 import { ClickOutsideModule } from 'ng-click-outside';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
@@ -18,7 +17,6 @@ const allSharedComponents = [
 const allSharedModule = [
   ReactiveFormsModule,
   ClickOutsideModule,
-  TranslateModule,
   PrimeNgModule,
   RouterModule,
   FormsModule,
